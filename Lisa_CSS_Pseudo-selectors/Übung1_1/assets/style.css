@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a:visited{
+    color:#FCB941;
+}
+
+a:hover{
+    text-transform: none;
+    background-color: #7E3661;
+    color:white;
+}
+
+a:active{
+    font-size: 3em;
+}

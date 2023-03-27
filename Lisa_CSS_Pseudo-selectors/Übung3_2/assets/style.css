@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Mont;
+    src: url('Montserrat-Regular.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin-left: 15px;
+}
+
+li:nth-of-type(3n+0){
+    color: #311B92;
+    font-family: 'Mont', Arial, Helvetica, sans-serif;
+}
+
+li:nth-of-type(5n+0){
+    background-color: #FFF176;
+}
+
+
+li:nth-child(even){
+    text-decoration: underline;
+}
+
+
+li:nth-child(odd){
+    list-style-type: square;
+}
+
+li:nth-of-type(7n+0){
+    font-size: 1.6em;
+}
+
+li:first-of-type{
+    color: #E53935;
+}
+
+
+li:nth-of-type(4n+0){
+    letter-spacing: 6px;
+}
+
+li:nth-of-type(13n+0){
+    background-color: #FF8A80;
+}
