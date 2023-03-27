@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1::first-letter{
+    color: #00796B;
+    font-size: 3em;
+}
+
+h1:hover::first-letter{
+    color: #4FC3F7;
+}
+
+ul{
+    margin-left: 30px;
+}
+li{
+    list-style-type: none;
+}
+
+/*da immer zwei das gleiche icon vorne haben
+und gleiche transformation - zu Klassen zusammenfassen!*/
+
+.done{
+    text-decoration: line-through;
+}
+
+.inprogress{
+    background-color: aqua;
+}
+
+.nope{
+    text-decoration: underline;
+}
+
+
+/*Icons davor*/
+
+.done::before{
+    content: url('check.png');
+}
+
+.inprogress::before{
+    content:url('doing.png')
+}
+
+.nope::before{
+    content: url('no.png');
+}
+
+
+
+/*Icons dahinter - 6 verschiedene deshalb jedes ansprechen*/
+
+li:nth-of-type(1)::after{
+    content: url('gym.png');
+}
+
+li:nth-of-type(2)::after{
+    content: url('bill.png');
+}
+
+li:nth-of-type(3)::after{
+    content: url('dance.png');
+}
+
+li:nth-of-type(4)::after{
+    content: url('eat.png');
+}
+
+ul > li:nth-of-type(5)::after{
+    content: url('book.png');
+}
+
+li:nth-of-type(6)::after{
+    content:url('organize.png');
+}

@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Mont;
+    src: url('Montserrat-Regular.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 15px;
+    padding: 0;
+    font-family: 'Mont', Arial, Helvetica, sans-serif;
+}
+
+::selection{
+    background-color: #a020f0;
+    color: #c71585;
+}
+
+h1::before{
+    content: 'Hi!';
+    color: #32cd32
+}
+
+h2::after{
+    content: '!';
+    color:#a020f0;
+}
+
+p::first-line{
+    text-transform: uppercase;
+    color:#483d8b;
+}
+
+p::first-letter{
+    font-size: 35px;
+    color: #00ced1;
+}
+
+h1,h2,h3{
+    color: #2e8b57;
+}

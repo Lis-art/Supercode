@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h3::first-letter{
+    color: #00796B;
+    font-size: 3em;
+}
+
+h3:hover:first-letter{
+    color: #4FC3F7;
+}
+
+ul{
+    margin-left: 30px;
+}
+
+ul > li:first-of-type::first-letter{
+    color: #4FC3F7;
+    font-size: 2em;
+    text-decoration:overline;
+}
+
+ul > li:nth-of-type(2)::first-letter{
+    color: #C51162;
+    font-size: 2em;
+    text-decoration:underline;
+}
+
+ul > li:last-of-type::first-letter {
+    color: #64DD17;
+    font-size: 2em;
+}
+
+ul > li:last-of-type {
+    text-decoration: line-through;
+}
+
+p:first-of-type{
+    color: #37474F;
+    text-indent: 50px;
+}
+
+p:first-of-type::first-line{
+    font-size: 1.3em;
+}
+
+/* Alle ersten Buchstaben der Absätze mit Ausnahme des ersten sind rot und haben Größe 1.5em*/
+p:not(:first-of-type)::first-letter {
+    color: #D50000;
+    font-size: 1.5em;
+}
+
+/* Alle Absätze p außer der Erste sind in der ersten Zeile grün */
+p:not(:first-of-type)::first-line {
+    color: green;
+}
+  
+  /* Beim Hovern hat die erste Zeile der Absätze mit Ausnahme der ersten blau als Farbe */
+p:not(:first-of-type):hover::first-line {
+    color: #303F9F;
+}
+
+p:nth-of-type(even){
+    font-weight: 600;
+}
+
+/*Beispiele für before und after
+
+p:first-of-type::before{
+    content:'MOIN';
+}
+
+h3::after {
+    content: '!';
+    color: #4FC3F7;
+  }
+
+::selection {
+  background-color: yellow;
+  color: red;
+}
+--> wenn User einen Text auswählt wird Hintergrund rot und Text gelb!
+*/
