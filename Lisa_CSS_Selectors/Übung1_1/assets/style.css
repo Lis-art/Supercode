@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#layout{
+    background-color: #f1f1f1;
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.left{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.right{
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.button-read{
+    background-color: lightblue;
+    padding: 5px 15px 5px 15px;
+    border: 1px solid green;
+    margin: auto;
+    display: block;
+    width: 100px;
+}
