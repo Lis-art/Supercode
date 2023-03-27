@@ -1,0 +1,12 @@
+
+
+section{
+    background-image: url("./gradient_bg_vertical.png");
+    background-repeat: repeat-y;
+}
+
+article{
+    background-image: url("./Teekanne.jpeg");
+    background-position-x: right;
+    background-repeat: no-repeat;
+}

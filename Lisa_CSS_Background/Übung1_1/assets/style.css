@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1:first-of-child{
+    background-color: lightblue;
+}
+
+section{
+    background-color: linen;
+}
+
+article{
+    background-image: url('Turm.jpeg');
+}
+

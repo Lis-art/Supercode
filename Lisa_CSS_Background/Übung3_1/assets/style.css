@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+section {
+    height: 100vh;
+    background-image: url('./worachat-sodsri-3UB_L68ePes-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
