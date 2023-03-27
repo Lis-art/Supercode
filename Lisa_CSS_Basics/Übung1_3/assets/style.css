@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: darkgray;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+    display: block;
+}
+
+span{
+    color: red;
+}
+
