@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    background-color: rgb(49, 210, 210);
+    width: 200px;
+    padding: 25px;
+    border: 25px solid black;
+    margin: 25px auto 25px auto;
+}

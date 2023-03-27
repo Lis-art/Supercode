@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    border: 3px black dashed;
+    border-radius: 15px;
+    padding: 10px 25px;
+    margin: 20px 10px 15px 10px;
+    text-align: center;
+
+}
+
+p{
+    color: violet;
+    border: 2px solid coral;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+
+p::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+    border: 2px solid gray;
+    box-shadow: 5px 5px 15px 5px #000000;
+    border: 25px;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin: 20px 40px;
+}
+
+ol{
+    border: 2px rgb(181, 238, 95) dotted;
+    margin: 20px 80px;
+    padding: 10px 0px
+}
+
+li{
+    text-decoration: underline green;
+    
+    margin: 5px 17px;
+}
+
+h3{
+    border: 3px rgb(117, 225, 117) double;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 20px 200px;
+}

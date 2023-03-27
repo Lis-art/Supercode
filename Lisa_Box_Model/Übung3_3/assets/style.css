@@ -1,0 +1,238 @@
+@font-face {
+    font-family: Poppins;
+    src: url('Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Cinzel;
+    src: url('Cinzel-VariableFont_wght.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*traveller*/
+
+h3{
+    width: 101.09px;
+    height: 25.5px;
+
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-family: 'Cinzel', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18.72px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+/*Bild*/
+
+section:nth-of-type(1) {
+    width: 1440px;
+    height: 577.09px;
+    background: url(Alpen.png);
+    margin-bottom: 79.91px;
+}
+
+/*Exkursion in the alps*/
+
+h1{
+    position: absolute;
+    width: 615.06px;
+    height: 67.5px;
+    left: calc(50% - 615.06px/2 + 9.2px);
+    top: 254.8px;
+
+    text-transform: uppercase;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 67px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/*Choose your trip*/
+
+section:nth-of-type(2) h2{
+
+    width: 230.49px;
+    height: 32.5px;
+
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #333333;
+
+    margin: 0 auto 60.41px auto;
+}
+
+/*Paragraf choose your trip*/
+
+p{
+    width: 1122.75px;
+    height: 94.5px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #333333;
+
+    margin: 60.41px 158.53px 77px 158.53px;
+}
+
+/*Abstand links*/
+main div{
+    margin-left: 108px;
+}
+
+main div img{
+    height: 202.31px;
+    width: 360px;
+    margin-right:  76.27px;
+    margin: 0 76.27px 86.5px auto;
+
+}
+
+/*Überschrift Tour Dates*/
+
+section:nth-of-type(3) h2{
+
+    width: 205.43px;
+    height: 32.5px;
+
+
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #333333;
+
+    justify-content: center;
+    margin: 0 auto 41.7px auto;
+}
+
+ul{
+    margin-left: 148px;
+    margin-bottom: 124.8px;
+}
+
+section:nth-of-type(3) li{
+
+    width: 811.95px;
+    height: 22.5px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: left;
+    
+    color: #333333;
+
+    list-style: none;
+    
+    margin-left: 148px;
+    margin-bottom: 16.5px;
+}
+
+span{
+    color: red;
+}
+
+li:nth-of-type(5) span{
+    color: green;
+}
+
+li:nth-of-type(6) span{
+    color: green;
+}
+
+footer{
+    width: 1440px;
+    height: 144.05px;
+
+    border-top: 1px solid #CCCCCC;
+}
+
+footer h2{
+    width: 152.3px;
+    height: 32.5px;
+
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #333333;
+
+    margin:  32.91px auto 20.91px auto;
+
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    width: 10%;
+
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
+
+footer a{
+
+    width: 166.14px;
+    height: 26px;
+
+    /*
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18.72px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #3B5998;
+    */
+    margin: 0 auto 31.72px auto;
+}
