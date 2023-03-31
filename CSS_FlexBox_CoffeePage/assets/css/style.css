@@ -1,0 +1,230 @@
+@font-face {
+    font-family: Clicker;
+    src: url('../fonts/ClickerScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: Playfair;
+    src: url('../fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root{
+    --main-color: #F9C06A;
+    --button-text: #1E1E1E;
+    --other-color: white;
+    --headline-color: #603809;
+    --text-color: #707070;
+    --space: 0 6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    margin: 0 0 1.7rem 0;
+}
+
+h1{
+    margin: 0 0 1.7rem 0;
+}
+
+h2{
+    margin: 0 0 1.7rem 0;
+}
+
+h3{
+    margin: 0 0 1.5rem 0;
+}
+
+h4{
+    margin: 0 0 1.7rem 0;
+}
+
+
+.button{
+    background-color: var(--main-color);
+    color: var(--button-text);
+    border-radius: 20px;
+    padding: 0.7rem 1.3rem;
+    margin: 2rem 0;
+    display: inline-block;
+}
+
+/* HEADER */
+
+
+header{
+    color: var(--other-color);
+    background: url('../img/header.png'), no-repeat, center,
+                linear-gradient(300deg, black, black);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header nav div a{
+    color: var(--other-color);
+    padding: 0 2rem;
+}
+
+
+header nav{
+    font-family: 'Playfair', Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+header section{
+    font-family: 'Playfair', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 50rem;
+    max-width: 50vw;
+    margin: var(--space);
+}
+
+header section h1{
+    font-family: 'Clicker', Arial, Helvetica, sans-serif;
+    font-size: 12rem;
+}
+
+header section h3{
+    padding-top: 4rem;
+}
+
+/* MAIN */
+
+/* PAGE - COFFEE CUP */
+
+.coffee_cup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: var(--space);
+    height: 75vh;
+}
+
+.coffee_cup article{
+    max-width: 50vw;
+    font-family: 'Playfair', Arial, Helvetica, sans-serif;
+    
+}
+
+.coffee_cup article h2{
+    color: var(--headline-color);
+}
+
+.coffee_cup article p{
+    color: var(--text-color);
+}
+
+.coffee_cup img{
+    max-width: 70vw;
+}
+
+
+
+/* SPLASH COFFEE */
+
+.splash{
+    width: 20rem;
+    margin: -2rem 0;
+}
+
+
+/* ICON PAGE */
+
+.icon_page{
+    text-align: center;
+}
+
+.icon_page article{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0 0 3rem 0;
+}
+
+.icon_page article div{
+    padding: 1rem;
+    max-width: 20vw;
+}
+
+.icon_page article div:nth-of-type(1){
+    background-color: #FFEED8;
+}
+
+.icon_page article div:nth-of-type(2){
+    background-color: rgba(249, 192, 106, 0.42);
+}
+
+.icon_page article div:nth-of-type(3){
+    background-color: rgba(249, 192, 106, 0.42);
+}
+
+.icon_page article div:nth-of-type(4){
+    background-color: rgba(249, 192, 106, 0.42);
+}
+
+.icon_page h2{
+    color: var(--headline-color);
+    font-size: 3rem;
+}
+
+.icon_page h3{
+    color: var(--headline-color);
+}
+
+.icon_page p{
+    color: var(--text-color);
+}
+
+.icon_page article div img{
+    max-width: 4rem;
+    margin: 2rem 0;
+}
+
+
+/* LAST PAGE */
+
+.coffee_beaker{
+    background: linear-gradient(
+    300deg,
+    rgba(106, 48, 14, 0.789), 
+    rgba(106, 48, 14, 0.792)),
+    url('../img/bgimg.png') no-repeat center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space);
+    min-height: 80vh;
+}
+
+.coffee_beaker h2{
+    color: var(--other-color);
+    font-size: 3rem;
+}
+
+.coffee_beaker p{
+    color: var(--other-color);
+}
+
+.coffee_beaker div{
+    max-width: 45vw;
+}
