@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Mont;
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-image: url('https://source.unsplash.com/random/canada');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+
+    font-family: 'Mont', Arial, Helvetica, sans-serif;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.3;
+    background-color: black;
+}
+
+
+header div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+header div a{
+    padding: 1rem 3rem;
+    color: rgb(198, 175, 175);
+    text-decoration: none;
+}
