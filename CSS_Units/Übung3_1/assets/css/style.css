@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Bitter;
+    src: url('../fonts/Bitter-Regular.ttf ');
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    background-image: url('../img/daniela-cuevas-t7YycgAoVSw-unsplash.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Bitter', Arial, Helvetica, sans-serif;
+    text-align: center;
+    vertical-align: centers;
+}
+
+main{
+    padding: 5%;
+}
+
+article{
+    padding: 2%;
+
+    border-radius: 5rem;
+}
+
+h1{
+    font-size: 2rem;
+    text-shadow: 2px 2px gray;
+    padding: 15px 25px;
+}
+
+h2{
+    font-size: 1.5em;
+    color: black;
+    padding: 20px;
+}
+
+p{
+    font-size: 14px;
+    color: black;
+    padding: 20px;
+}
+
+article:first-of-type{
+    opacity: 0.5;
+    background-color: #747474;
+    color: #fff;
+    margin-bottom: 20px;
+    
+}
+
+article:nth-of-type(2){
+    opacity: 0.5;
+    background-color: #cacaca;
+    color: #fff;
+    padding: 30px;
+}
+
+main section{
+    padding: 3rem 2rem 2rem 2rem;
+}

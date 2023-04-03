@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.2rem;
+
+}
+    
+    
+ul .class:li{
+    line-height: 8em;
+}
+    
+    
+li{
+    line-height: 1.5rem;
+    font-size: 0.8em;
+}
+    
+ul{
+    padding-inline-start: 1.2em;
+}
+    
+ul:first-of-type{
+        
+    list-style-type: none;
+}
+    
+.dog li::before{
+    content: "🐺";
+}
+    
+.cat li::before{
+    content: "🐱";
+}
+    
+.parrot li::before{
+    content: "🦜";
+}
+    
+.snake li::before{
+    content: "🐍";
+}
+    
+    
+ .lizzard li::before{
+     content: "🦎";
+}
+    
+    
+.pets{
+    border: 2px solid black;
+}
+    
+html{
+    font-size: 2rem;
+}
+
+
+ul .class:li{
+    line-height: 8em;
+}
+
+
+li{
+    line-height: 1.5rem;
+    font-size: 0.8em;
+}
+
+ul{
+    padding-inline-start: 1.2em;
+}
+
+ul:first-of-type{
+    
+    list-style-type: none;
+}
+
+.dog li::before{
+ content: "🐺";
+}
+
+.cat li::before{
+    content: "🐱";
+}* {
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul .class:li{
+    line-height: 8em;
+}
+
+
+li{
+    line-height: 1.5rem;
+    font-size: 0.8em;
+}
+
+ul{
+    padding-inline-start: 1.2em;
+}
+
+ul:first-of-type{
+    
+    list-style-type: none;
+}
+
+.dog li::before{
+ content: "🐺";
+}
+
+.cat li::before{
+    content: "🐱";
+}
+
+.parrot li::before{
+    content: "🦜";
+}
+
+.snake li::before{
+    content: "🐍";
+}
+
+
+.lizzard li::before{
+    content: "🦎";
+}
+
+
+.pets{
+    border: 2px solid black;
+}
+
+html{
+    font-size: 2rem;
+}
+
+.parrot li::before{
+    content: "🦜";
+}
+
+.snake li::before{
+    content: "🐍";
+}
+
+
+.lizzard li::before{
+    content: "🦎";
+}
+
+
+.pets{
+    border: 2px solid black;
+}
+

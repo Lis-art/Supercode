@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Gruppo;
+    src: url('../fonts/Gruppo-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+main{
+    font-family: 'Gruppo', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+   
+main article{
+    background-image: url('../img/johannes-plenio-a72o8w9HC2w-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+}
+
+h4{
+    font-size: 1.5rem;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+article section:nth-of-type(2) h1{
+    font-size: 8rem;
+    margin-bottom: 2rem;
+}
+
+article section:nth-of-type(2) h2{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+article section:nth-of-type(2) h3{
+    margin-bottom: 7rem;
+    font-size: 1.5rem;
+}
+
+article a{
+    border-radius: 15px;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+
+a:hover{
+    background-color: #b9b9b9;
+    opacity: 0.5;
+    color: #fff;
+}
+
