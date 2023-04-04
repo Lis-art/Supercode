@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level2_3</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend style="padding:20px">Register form</legend>
+            
+            <div>
+            <label class="space-label" for="text">Name</label> 
+            <input type="text" placeholder="Name">
+            </div>
+            
+            <div>
+            <label class="space-label" for="text">Surname</label> 
+            <input type="text" placeholder="Surname">
+            </div>
+
+            <div>
+            <label class="space-label" for="email">Email</label> 
+            <input type="email" placeholder="email">
+            </div>
+
+            <div>
+                <label class="space-label">Gender</label>
+                <input type="radio" id="male" name="lang" value="male"/>
+                <label for="male">Male</label>
+            
+                <input type="radio" id="female" name="lang" value="female"/>
+                <label for="female">Female</label>
+            </div>
+
+            <div>
+                <label class="space-label" for="file">Picture</label>
+                <input type="file" id="file" placeholder="Choose file" />
+            </div>
+
+            <div>
+                <label class="space-label">Country</label>
+                <select>
+                    <option>Germany</option>
+                        <option>Spain</option>
+                        <option>France</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="space-label">Preferred languages</label>
+                <select multiple="multiple"> 
+                    <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JS</option>
+                        <option>React</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="space-label">Field of activity</label>
+                <input type="radio" id="it" name="lang" value="it"/>
+                <label for="it">IT</label>
+        
+                <input type="radio" id="design" name="lang" value="design"/>
+                <label for="design">Design</label>
+        
+                <input type="radio" id="other" name="lang" value="other"/>
+                <label for="other">Other</label>
+            </div>
+            
+            <div>
+            <input type="button" value="Send"/>
+            <input type="button" value="Cancel" />
+            </div>
+        </fieldset>
+
+
+    </form>
+    
+</body>
+</html>

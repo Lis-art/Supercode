@@ -1,0 +1,19 @@
+input, textarea, select{
+    
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+input[type="text"]{
+    width: 150px;
+}
+
+
+label{
+    font-weight: bolder;
+}
+
+input[type="submit"]{
+    background-color: rgb(9, 138, 138);
+}

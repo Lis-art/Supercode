@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset{
+    max-width: 450px;
+    margin-left: 15px;
+}
+
+input[type="email"]{
+    margin-bottom: 15px;
+}
+
+label{
+    padding-left: 7px;
+}
+
+div{
+    padding-left: 7px;
+    padding-bottom: 10px;
+}
