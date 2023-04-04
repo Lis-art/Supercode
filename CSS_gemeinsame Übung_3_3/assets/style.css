@@ -126,6 +126,7 @@ section:not(:nth-of-type(1)){
     align-items: center;
     align-content: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 h3{
