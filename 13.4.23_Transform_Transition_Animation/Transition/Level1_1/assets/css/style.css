@@ -1,0 +1,15 @@
+
+.transition div{
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+}
+
+.transition div:hover{
+    height: 50px;
+    width: 300px;
+    background-color: brown; 
+    transition: width 2s linear;
+    transition: translateX(300px);
+}
+

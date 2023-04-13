@@ -1,0 +1,51 @@
+section{
+    background-color: black;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    perspective:1000px;
+}
+
+article{
+    display: flex;
+    width: 500px;
+    padding: 10px;
+    transform: rotateX(10deg) rotateY(-30deg) rotateZ(5deg);
+    margin-top: -5px;
+    transition: all 0.5s;
+}
+
+article:hover{
+    transform: rotateX(5deg) rotateY(-10deg) rotateZ(2deg);
+    z-index: 1;
+}
+
+
+.blau{
+    background-color: rgba(0, 255, 255, 0.653);
+    
+}
+
+.blau:hover{
+    background-color: rgba(0, 255, 255);
+}
+
+
+.gelb{
+    background-color: rgba(213, 211, 93, 0.658);
+}
+
+.gelb:hover{
+    background-color: rgba(213, 211, 93);
+}
+
+.pink{
+    background-color: rgba(181, 149, 211, 0.596);
+}
+
+.pink:hover{
+    background-color: rgba(181, 149, 211);
+}
