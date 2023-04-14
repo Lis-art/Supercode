@@ -1,0 +1,197 @@
+@font-face {
+    font-family: Cormorant;
+    src: url('../fonts/CormorantGaramond-Regular.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header main{
+    font-family: 'Cormorant', Arial, Helvetica, sans-serif;
+}
+
+header h1{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-style: double;
+    padding: 0.5rem 0;
+    margin: 0 2rem 2rem 2rem;
+}
+
+main section:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+main section:nth-of-type(1) h2{
+    margin-left: 18rem;
+}
+
+main section:nth-of-type(1) h5{
+    margin-right: 4.5rem;
+}
+
+
+.grid-parent{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat (10, 1fr);
+    grid-template-rows: repeat (6, 1fr);
+}
+
+.shattering{
+    grid-column-start:1; 
+    grid-column-end:3; 
+    grid-row-start:1; 
+    grid-row-end:2; 
+
+    margin: 0 1.5rem;
+}
+
+.microwave{
+    grid-column-start: 3;
+    grid-column-end: 5; 
+    grid-row-start: 1; 
+    grid-row-end: 2; 
+    
+    margin: 0 1.5rem;
+}
+
+.knife{
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    grid-row-start: 2; 
+    grid-row-end: 4; 
+
+    margin: 0 1.5rem;
+}
+
+.cooking{
+    grid-column-start: 3; 
+    grid-column-end: 5; 
+    grid-row-start: 2; 
+    grid-row-end: 4; 
+    
+ 
+    margin: 0 1.5rem;
+}
+
+.contact{
+    grid-column-start: 1; 
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    
+
+    margin: 0 1.5rem;
+}
+
+.death{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    
+
+    margin: 0 1.5rem;
+}
+
+.img-kitchen{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    
+    
+}
+
+.img-kitchen img{
+    height: 100vh;
+    width: 40vw;
+}
+
+.img-kitchen p{
+    text-align: left;
+    font-style: italic;
+}
+
+
+.add{
+    grid-column-start: 8; 
+    grid-column-end: 10; 
+    grid-row-start: 1; 
+    grid-row-end: 3; 
+    
+    margin: 0 1rem;
+
+    width: 12rem;
+    height: 12rem;
+
+
+    border: 2px solid black;
+    border-style: double;
+}
+
+.add p{
+    text-align: center;
+    padding: 4rem 4rem;
+}
+
+.knives-needed{
+    grid-column-start: 8; 
+    grid-column-end: 10; 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+    
+    margin: 0 1rem;
+
+    width: 12rem;
+    height: 12rem;
+
+    border: 2px solid black;
+    border-style: double;
+
+    text-align: center;
+}
+
+.knives-needed  h3{
+    margin: 0.5rem auto;
+}
+
+.knives-needed  p{
+    margin-bottom: 0.5rem;
+}
+
+.ikea-img{
+    grid-column-start: 8; 
+    grid-column-end: 10; 
+    grid-row-start: 5; 
+    grid-row-end: 7; 
+    
+    margin: 0 1rem;
+
+    width: 12rem;
+    height: 12rem;
+
+    border: 2px solid black;
+    border-style: double;
+}
+
+.ikea-img img{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
