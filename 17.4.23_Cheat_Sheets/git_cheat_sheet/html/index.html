@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT_Cheat_Sheet</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>GIT Cheat Sheet</h1>
+        <img src="https://1000logos.net/wp-content/uploads/2018/11/GitHub-logo.jpg" alt="">
+    </header>
+    <main>
+        <section class="wrapper">
+        <section class="box-SETUP">
+            <h3>SETUP</h3>
+            <p>Configuring user information used across all local repositories</p>
+            <ul>
+                <li>git config --global user.name “[firstname lastname]”</li>
+                <li>&rarr; set a name that is identifiable for credit when review version history</li>
+                <li>git config --global user.email “[valid-email]”</li>
+                <li>&rarr; set an email address that will be associated with each history marker</li>
+                <li>git config --global color.ui auto</li>
+                <li>&rarr; set automatic command line coloring for Git for easy reviewing</li>
+            </ul>
+        </section>
+
+        <section class="box-INIT-Clone">
+            <h3>CLONE & INIT</h3>
+            <p>Configuring user information, initializing and cloning repositories</p>
+            <ul>
+                <li>git init</li>
+                <li>&rarr; initialize an existing directory as a Git repository</li>
+                <li>git clone [url]</li>
+                <li>&rarr; retrieve an entire repository from a hosted location via URL</li>
+            </ul>
+        </section>
+
+        <section class="box-STAGE">
+            <h3>STAGE & SNAPSHOT</h3>
+            <p>Working with snapshots and the Git staging area</p>
+            <ul>
+                <li>git status</li>
+                <li>&rarr; show modified files in working directory, staged for your next commit</li>
+                <li>git add . [file]</li>
+                <li>&rarr; add a file as it looks now to your next commit (stage)</li>
+                <li>git reset [file]</li>
+                <li>&rarr; unstage a file while retaining the changes in working directory</li>
+                <li>git diff</li>
+                <li>&rarr; diff of what is changed but not staged</li>
+                <li>git diff --staged</li>
+                <li>&rarr; diff of what is staged but not yet commited</li>
+                <li>git commit -m “[descriptive message]”</li>
+                <li>&rarr; commit your staged content as a new commit snapshot</li>
+            </ul>
+        </section>
+
+        <section class="box-BRANCH">
+            <h3>BRANCH & MERGE</h3>
+            <p>Isolating work in branches, changing context, and integrating changes</p>
+            <ul>
+                <li>git branch</li>
+                <li>&rarr; list your branches. a * will appear next to the currently active branch</li>
+                <li>git branch [branch-name]</li>
+                <li>&rarr; create a new branch at the current commit</li>
+                <li>git checkout</li>
+                <li>&rarr; switch to another branch and check it out into your working directory</li>
+                <li>git merge [branch]</li>
+                <li>&rarr; merge the specified branch’s history into the current one</li>
+                <li>git log</li>
+                <li>&rarr; show all commits in the current branch’s history</li>
+                <li>git branch -d (Branch Name=XY)</li>
+                <li>&rarr; delete the branch XY</li>
+            </ul>
+        </section>
+
+        <section class="box-SHARE">
+            <h3>SHARE & UPDATE GIT BRANCHES</h3>
+            <p>Retrieving updates from another repository and updating local repos</p>
+            <ul>
+                <li>git remote add [alias] [url]</li>
+                <li>&rarr; add a git URL as an alias</li>
+                <li>git fetch [alias]</li>
+                <li>&rarr; fetch down all the branches from that Git remote</li>
+                <li>git merge [alias]/[branch]</li>
+                <li>&rarr; merge a remote branch into your current branch to bring it up to date</li>
+                <li>git push [alias] [branch]</li>
+                <li>&rarr; Transmit local branch commits to the remote repository branch</li>
+                <li>git pull</li>
+                <li>&rarr; fetch and merge any commits from the tracking remote branch</li>
+            </ul>
+        </section>
+
+        <section class="box-PULL">
+            <h3>GIT PULL</h3>
+            <p></p>
+            <ul>
+                <li>git pull --rebase <remote > </li>
+                <li>&rarr; Fetch the remote’s copy of current branch and rebases it into the local
+                    copy. Uses git rebase instead of merge to integrate the branches.</li>
+            </ul>
+        </section>
+
+        <section class="box-PUSH">
+            <h3>GIT PUSH</h3>
+            <p></p>
+            <ul>
+                <li>git push <remote >--force</li>
+                <li>&rarr; Forces the git push even if it results in a non-fast-forward merge. Do not use
+                    the --force flag unless you’re absolutely sure you know what you’re doing.</li>
+                <li>git push <remote >--all</li>
+                <li>&rarr; Push all of your local branches to the specified remote.</li>
+                <li>git push <remote >--tags</li>
+                <li>&rarr; Tags aren’t automatically pushed when you push a branch or use the
+                    --all flag. The --tags flag sends all of your local tags to the remote repo.</li>
+            </ul>
+        </section>
+
+        <section class="box-INSPECT">
+            <h3>INSPECT & COMPARE</h3>
+            <p>Examining logs, diffs and object information</p>
+            <ul>
+                <li>git log</li>
+                <li>&rarr; show the commit history for the currently active branch</li>
+                <li>git log branchB..branchA</li>
+                <li>&rarr; show the commits on branchA that are not on branchB</li>
+                <li>git log --follow [file]</li>
+                <li>&rarr; show the commits that changed file, even across renames</li>
+                <li>git diff branchB...branchA</li>
+                <li>&rarr; show the diff of what is in branchA that is not in branchB</li>
+                <li>git show [SHA]</li>
+                <li>&rarr; show any object in Git in human-readable format</li>
+                <li>Q</li>
+                <li>&rarr; to get out of the log</li>
+            </ul>
+        </section>
+
+    </section>
+    </main>
+</body>
+</html>

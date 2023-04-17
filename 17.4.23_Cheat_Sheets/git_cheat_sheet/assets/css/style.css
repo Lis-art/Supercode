@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+root:{
+    --space: 2rem;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    margin-top: 5rem;
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:5rem;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+header h1{
+    margin-left:3rem;
+    margin-top: 1rem;
+}
+
+img{
+    width: 90px;
+    height: 50px;
+    margin-right:2rem;
+    margin-top: 1rem;
+}
+
+h3{
+    font-size: 1.8rem;
+    color: rgb(104, 48, 157);
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+    text-decoration: underline;
+}
+
+p{
+    font-weight: bolder;
+    margin-bottom: 2.5rem;
+    font-size: 1.2rem;
+}
+
+ul li:nth-of-type(even){
+    list-style-type:none;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+ul li:nth-of-type(odd){
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+    color: rgb(30, 33, 201);
+    font-size: 1.2rem;
+}
+
+.box-SETUP{
+    grid-column-start:2; 
+    grid-column-end:4; 
+    grid-row-start:1; 
+    grid-row-end:2; 
+}
+
+.box-INIT-Clone{
+    grid-column-start:5; 
+    grid-column-end:7; 
+    grid-row-start:1; 
+    grid-row-end:2; 
+}
+
+.box-STAGE{
+    grid-column-start:2; 
+    grid-column-end:4; 
+    grid-row-start:2; 
+    grid-row-end:3; 
+}
+
+.box-BRANCH{
+    grid-column-start:5; 
+    grid-column-end:7; 
+    grid-row-start:2; 
+    grid-row-end:3; 
+}
+
+.box-SHARE{
+    grid-column-start:5; 
+    grid-column-end:7; 
+    grid-row-start:3; 
+    grid-row-end:4; 
+}
+
+.box-INSPECT{
+    grid-column-start:2; 
+    grid-column-end:4; 
+    grid-row-start:3; 
+    grid-row-end:4; 
+}
+
+.box-PUSH {
+    grid-column-start:2; 
+    grid-column-end:4; 
+    grid-row-start:4; 
+    grid-row-end:5; 
+}
+
+.box-PULL{
+    grid-column-start:5; 
+    grid-column-end:7; 
+    grid-row-start:4; 
+    grid-row-end:5; 
+}
