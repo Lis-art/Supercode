@@ -3,10 +3,6 @@
     src: url(../fonts/Poppins-Regular.ttf);
 }
 
-root:{
-    --space: 2rem;
-}
-
 
 *{
     box-sizing: border-box;
