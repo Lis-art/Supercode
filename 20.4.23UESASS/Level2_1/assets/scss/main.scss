@@ -1,0 +1,75 @@
+@import "variables.scss";
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-image: $background-image;
+    min-height: 100vh;
+    header {
+
+        nav{
+            display:flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            p {
+                font-size: 3rem;
+                color: $firstColor;
+                padding-left: 2rem;
+            }
+        }
+    }
+    main {
+        min-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+            font-size: 10rem;
+            color: $secondColor;
+        }
+        h1::after {
+            content: "2.";
+            font-size: 6rem;
+            border-radius: 50%;
+            border: 1px solid white;
+            color: $secondColor;
+            background-color: $numberColor;
+            width: 6rem;
+            height: 7rem;
+            display: inline-block;
+            padding-left: 16px;
+            bottom: 6rem;
+            position: relative;
+            right: 2rem;
+            align-self: center;
+        }
+        h3 {
+            font-size: 5rem;
+            color: $secondColor;
+        }
+    }
+    footer {
+            display:flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            .lab {
+                font-size: 3rem;
+                padding-right: 1rem;
+            }
+            .lab la-twitter {
+                color: $firstColor;
+            }
+            .lab la-behance {
+                color: $firstColor;
+            }
+            .lab la-facebook-f{
+                color:$firstColor;
+            }
+    }    
+}

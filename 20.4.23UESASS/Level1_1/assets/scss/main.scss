@@ -1,0 +1,46 @@
+@import "variables.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    .lab la-twitter{
+        color:$twitter;
+    }
+    .lab la-behance{
+        color:$behance;
+    }
+    .lab la-facebook{
+        color:$facebook;
+    }
+    .lab la-vimeo{
+        color:$vimeo
+    }
+    .lab la-snapchat{
+        color:$snapchat;
+    }
+    .lab la-airbnb{
+        color:$airbnb;
+    }
+    .lab la-amazon{
+        color:$amazon;
+    }
+    .lab la-android{
+        color:$android;
+    }
+    .lab la-stack-overflow{
+        color:$stack-overflow;
+    }
+    .lab la-ubuntu{
+        color:$ubuntu;
+    }
+    .lab la-github{
+        color:$github;
+    }
+    .lab la-js-square{
+        color:$js-square;
+    }
+}

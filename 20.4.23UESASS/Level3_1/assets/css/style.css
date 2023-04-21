@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-image: linear-gradient(45deg, #1ea6f5 12.5%, #ffc342 12.5%, #ffc342 25%, #ff5959 25%, #ff5959 37.5%, #e727f5 37.5%, #e727f5 50%, #1ea6f5 50%, #1ea6f5 62.5%, #ffc342 62.5%, #ffc342 75%, #ff5959 75%, #ff5959 87.5%, #e727f5 87.5%, #e727f5 100%);
+  min-height: 100vh;
+  min-width: 100vh;
+}
+.wrapper header nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.wrapper header nav p {
+  font-size: 3rem;
+  color: black;
+  padding-left: 2rem;
+}
+.wrapper div {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.wrapper div h1 {
+  font-size: 10rem;
+  color: white;
+}
+.wrapper div h1::after {
+  content: "2.";
+  font-size: 6rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  background-color: #e727f5;
+  width: 6rem;
+  height: 7rem;
+  display: inline-block;
+  padding-left: 16px;
+  top: 4rem;
+  position: absolute;
+  right: 2rem;
+  align-self: center;
+}
+.wrapper div h3 {
+  font-size: 5rem;
+  color: white;
+}
+.wrapper article {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.wrapper article .lab {
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+.wrapper article .lab la-twitter {
+  color: black;
+}
+.wrapper article .lab la-behance {
+  color: black;
+}
+.wrapper article .lab la-facebook-f {
+  color: black;
+}
+
+main {
+  background-color: white;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+main .about, main .services {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 3rem;
+}
+main .about .image, main .services .image {
+  margin-bottom: 7rem;
+  width: 50%;
+}
+main .about .image img, main .services .image img {
+  object-fit: contain;
+  width: 366px;
+  height: 215px;
+}
+main .about .content, main .services .content {
+  align-items: center;
+  width: 366px;
+  height: 215px;
+}
+main .about .content h1, main .services .content h1 {
+  font-size: 1.5rem;
+  text-align: left;
+}
+main .about .content p, main .services .content p {
+  font-size: 1.3rem;
+  text-align: left;
+  margin-top: 1rem;
+}
+main .about .content button, main .services .content button {
+  font-size: 0.8rem;
+  background-color: #ffc342;
+  color: white;
+  text-align: center;
+  margin-left: 5rem;
+  margin-top: 1rem;
+  padding: 10px 60px;
+}
+
+footer {
+  background-image: linear-gradient(45deg, #1ea6f5 12.5%, #ffc342 12.5%, #ffc342 25%, #ff5959 25%, #ff5959 37.5%, #e727f5 37.5%, #e727f5 50%, #1ea6f5 50%, #1ea6f5 62.5%, #ffc342 62.5%, #ffc342 75%, #ff5959 75%, #ff5959 87.5%, #e727f5 87.5%, #e727f5 100%);
+  height: 3rem;
+}
+footer p {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

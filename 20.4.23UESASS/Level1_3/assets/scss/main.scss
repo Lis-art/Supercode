@@ -1,0 +1,34 @@
+@import "mixin";
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+    height: 250px;
+    width: 150px;
+    .ball1{
+        top: 0;
+        left: 0;
+        @include ball;
+        @include strezzball (rollen, 2s, 3s, infinite, alternate);
+        @include ballColor (rgb(0, 129, 0));
+    }
+    .ball2{
+        top: 70px;
+        left: 0;
+        @include ball;
+        @include strezzball (rollen, 2s, 3s, infinite, alternate);
+        @include ballColor (rgb(17, 17, 212));
+    }
+    .ball3{
+        top: 140px;
+        left: 0;
+        @include ball;
+        @include strezzball (rollen, 2s, 3s, infinite, alternate);
+        @include ballColor (rgb(96, 0, 128));
+    }
+}

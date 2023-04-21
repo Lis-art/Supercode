@@ -1,0 +1,60 @@
+@keyframes rollen {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(120px);
+  }
+}
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 250px;
+  width: 150px;
+}
+.container .ball1 {
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation-name: rollen;
+  animation-duration: 2s;
+  animation-timing-function: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background: rgb(0, 129, 0);
+}
+.container .ball2 {
+  top: 70px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation-name: rollen;
+  animation-duration: 2s;
+  animation-timing-function: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background: rgb(17, 17, 212);
+}
+.container .ball3 {
+  top: 140px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation-name: rollen;
+  animation-duration: 2s;
+  animation-timing-function: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background: rgb(96, 0, 128);
+}
+
+/*# sourceMappingURL=style.css.map */
