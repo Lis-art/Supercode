@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Own_Tailwind_Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        module.exports = {
+            content: [
+            './pages//*.{js,ts,jsx,tsx}',
+            './components//*.{js,ts,jsx,tsx}',
+            ],
+            theme: {
+            extend: {
+                keyframes: {
+                wave: {
+                    '0%': { transform: 'translateY(-2rem)' },
+                    '100%': { transform: 'translateY(2rem)' },
+                },
+                },
+                animation: {
+                    schweben: 'wave 3s linear infinite',
+                }
+            },
+            },
+            plugins: [],
+        }
+    </script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+</head>
+<body class="font-serif">
+    <header>
+        <nav class="w-screen h-1/5 flex items-center justify-between  bg-slate-100">
+            <img src="./assets/img/png-transparent-kitsune-mask-drawing-summer-sonic-festival-babymetal-japan-mask-white-carnivoran-heart.png" class="h-12 w-13 m-4"  alt="">
+            <div class="px-10 py-8 font-semibold text-xl">
+                <a class="mr-4 hover:underline" href="#">Kami</a>
+                <a class="mr-4 hover:underline" href="#">Yokai</a>
+                <a class="mr-4 hover:underline" href="#">Oni</a>
+                <a class="mr-4 hover:underline" href="">Yurei</a>
+            </div>
+        </nav>
+        <section>
+            <img src="./assets/img/japanese-mythology-fujiwara-no-hidesato-preparing-to-shoot-a-giant-centipede-library-of-congress.avif" alt="">
+        </section>
+        <section class="flex items-center justify-center flex-col">
+            <h1 class="font-bold text-6xl mt-14 mb-20">Japanese Folklore</h1>
+            <p class="font-medium text-2xl  mb-20 text-center w-4/5">The mythology of Japan has a long history dating back more than 2,000 years. It became part of two major religious traditions: Shinto, an indigenous religion, and Buddhism, which developed in India and came to Japan from China and Korea.
+
+            Japanese mythology includes a vast number of gods, goddesses, and spirits. Most of the stories concern the creation of the world, the foundation of the islands of Japan, and the activities of deities, humans, animals, spirits, and magical creatures. Some myths describe characters and events associated with particular places in Japan. Others are set in legendary locations, such as the heavens or the underworld.</p>
+        </section>
+    </header>
+    <section class="flex items-center justify-center mb-10 ">
+        <img class="w-82 h-128 animate-[wave_3s_linear_infinite]" src="./assets/img/pngegg (2).png" alt="">
+    </section>
+    <section class="w-screen h-4/5 flex items-center justify-center">
+        <div class="flex flex-col items-center justify-around ">
+            <article class="border border-slate-300 bg-slate-300 rounded-xl mt-5 mb-5 mr-7 ml-7 p-5">
+                <h2 class="font-semibold text-xl" >Kami</h2>
+                <p>Kami (Japanese: 神, [kaꜜmi]) are the deities, divinities, spirits, phenomena or "holy powers" that are venerated in the Shinto religion. They can be elements of the landscape, forces of nature, or beings and the qualities that these beings express; they can also be the spirits of venerated dead people. Traditionally, great leaders like the Emperor could be or became kami.</p>
+            </article>
+            <article class="border border-slate-400 bg-slate-400 rounded-xl mt-5 mb-5 mr-7 ml-7 p-5">
+                <h2 class="font-semibold text-xl" >Yokai</h2>
+                <p>Yōkai (妖怪, "strange apparition") are a class of supernatural entities and spirits in Japanese folklore. The word yōkai is a loanword from the Chinese term yaoguai and is composed of the kanji for "demon; fairy; sprite" and "suspicious; apparition; monster; ghost; spectre". Yōkai are also referred to as ayakashi (あやかし), mononoke (物の怪) or mamono (魔物). Despite often being translated as such, yōkai are not literally demons in the Western sense of the word, but are instead spirits and entities. Their behavior can range from malevolent or mischievous to benevolent to humans.</p>
+            </article>               
+        </div>
+        <div class="flex flex-col items-center justify-around">
+            <article class="border border-slate-400 bg-slate-400 rounded-xl mt-5 mb-5 mr-7 ml-7 p-5">
+                <h2 class="font-semibold text-xl" >Oni</h2>
+                <p>An oni (鬼おに) (/oʊni/ OH-nee) is a kind of yōkai, demon, orc, ogre, or troll in Japanese folklore. They are believed to live in caves or deep in the mountains.[2] Oni are known for their superhuman strength and have been associated with powers like thunder and lightning along with their evil nature manifesting in their propensity for murder and cannibalism. Oni are to change their looks to fool their victims into trusting them. Oni can be male or female but have been predominantly male throughout history</p>
+            </article>
+            <article class="border border-slate-300 bg-slate-300 rounded-xl mt-5 mb-5 mr-7 ml-7 p-5">
+                <h2 class="font-semibold text-xl" >Yurei</h2>
+                <p>Yūrei (幽霊) are figures in Japanese folklore analogous to the Western model of ghosts. The name consists of two kanji, 幽 (yū), meaning "faint" or "dim" and 霊 (rei), meaning "soul" or "spirit". Alternative names include 亡霊 (Bōrei), meaning ruined or departed spirit, 死霊 (Shiryō) meaning dead spirit, or the more encompassing 妖怪 (Yōkai) or お化け (Obake). Like their Chinese and Western counterparts, they are thought to be spirits barred from a peaceful afterlife.</p>
+            </article>               
+        </div>
+    </section>
+    
+</body>
+</html>
