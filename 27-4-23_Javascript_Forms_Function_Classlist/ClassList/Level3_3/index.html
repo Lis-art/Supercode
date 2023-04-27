@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body style="color:rgb(29, 20, 207)">
+    <main>
+        <form onsubmit="return false">
+            <label for="red">Rot</label>
+            <input type="range" name="red" id="red" min="0" max="255" value="0" onchange="changeBackground()">
+            <br>
+            <label for="green">Grün</label>
+            <input type="range" name="green" id="green" min="0" max="255" value="0" onchange="changeBackground()">
+            <br>
+            <label for="blue">Blau</label>
+            <input type="range" name="blue" id="blue" min="0" max="255" value="0" onchange="changeBackground()">
+        </form>
+    </main>
+
+
+    <script text="text/javascript" src="./assets/js/main.js" ></script>
+</body>
+</html>
+
