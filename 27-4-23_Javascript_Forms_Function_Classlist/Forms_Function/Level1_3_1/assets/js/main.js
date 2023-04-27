@@ -1,7 +1,3 @@
-let btn = document.querySelector("Berechne!");
-console.log(btn.innerHTML);
-btn.innerHTML = "Berechne!";
-
 function getInputValue(){
     const output = document.querySelector(".output");
 
