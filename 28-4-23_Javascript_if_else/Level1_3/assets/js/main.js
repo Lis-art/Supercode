@@ -1,9 +1,8 @@
 function greaterThen() {
     event.preventDefault();
-    console.log("hello world");
     
     let inputNum = document.getElementById('input').value;
-    console.log(inputNum);
+    //console.log(inputNum);
     const output = document.querySelector(".outputifelse");
     //console.log(outputifelse);
 
@@ -15,4 +14,6 @@ function greaterThen() {
         console.log("Du darfst noch nicht Shisha rauchen.");
     }
 }
+
+
 
