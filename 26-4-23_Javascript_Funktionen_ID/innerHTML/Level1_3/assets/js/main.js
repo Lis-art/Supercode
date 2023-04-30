@@ -3,7 +3,7 @@ console.log(pictures.innerHTML);
 
 // Variable wird mit pictures deklariert, dann wird Wert zugeordnet
 // über angesprochene ID:gallery
-// übeer console.log wird Inhalt dem HTML Element zugefügt
+// über console.log wird Inhalt dem HTML Element zugefügt
 
 pictures.innerHTML = "<figure><img src='./assets/img/photo-1680328944823-547f1c7dc353.jpeg'><figcaption>Fig1</figcaption><figure>";
 
