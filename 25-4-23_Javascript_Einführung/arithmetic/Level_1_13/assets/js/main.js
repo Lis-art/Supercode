@@ -17,4 +17,4 @@ console.log("division: " + division_operator);
 // Modul: zeigt an, was der Rest sein würde.
 let modulus_operator = 14 % 5;
 console.log("modulus: " + modulus_operator);
-
+// Ergebnis: 5 passt zwei Mal in 14, Rest der der bleibt ist = 4

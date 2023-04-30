@@ -16,9 +16,8 @@ console.log(job);
 let married = true;
 console.log(married);
 
-let status = "verheiratet";
-console.log(status);
+
 
 // Anton ist 28 Jahre alt, von Beruf Trainer und ist verheiratet.
 
-console.log(firstName + " ist " + age + " Jahre alt, von Beruf " + job + " und ist " + status);
+console.log(firstName + " ist " + age + " Jahre alt, von Beruf " + job + " und ist " + {married});
