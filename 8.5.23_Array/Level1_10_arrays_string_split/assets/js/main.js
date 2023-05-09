@@ -42,15 +42,14 @@ Das Muster wird limit-1 Mal angewendet. Außerdem wird die Länge des zurückgeg
 // 3. nach jedem Buchstaben
 
 
-
 let text2 = "It's okay, Bender. I like cooking too. Oh, you're a dollar naughtier than most. My fellow Earthicans, as I have explained in my book 'Earth in the Balance', and the much more popular 'Harry Potter and the Balance of Earth', we need to defend our planet against pollution. Also dark wizards."
 
-let splitTextB = text2.split("");
-console.log(splitTextB);
+let splitText = text2.split("");
+console.log(splitText);
 
 // andere Variante 
-let splitText = new Array(text2.length);
+let splitTextB = new Array(text2.length);
 for (let i = 0; i < text2.length; i++) {
-  splitText[i] = String.fromCharCode(text2.charCodeAt(i));
+  splitTextB[i] = String.fromCharCode(text2.charCodeAt(i));
 }
-console.log(splitText); 
+console.log(splitTextB); 
