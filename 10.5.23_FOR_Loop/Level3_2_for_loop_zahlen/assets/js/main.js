@@ -16,6 +16,9 @@ Das array ist im Kommentarbereich! */
 /* 
 let numArr = [5, 22, 15, 100, 55];
 
+
+Versuche 1 - alles in einem:
+
 for (let i = 1; i <= numArr.length; i++){
 
 
@@ -35,58 +38,40 @@ for (let i = 1; i <= numArr.length; i++){
 
 
 
+// Versuch 2 - aufgeteilt:
 
 let testNumbers = [5, 22, 15, 100, 55];
 
-
-
-
-
-for (let i = 0; i < testNumbers.length; i++)
-{
-    const fiNumber = testNumbers[i];
-
-    testIfItHasDividableNumbers(fiNumber);
+for (let i = 0; i < testNumbers.length; i++){
+    const loopNumber = testNumbers[i];
+    testDividableNumbers(loopNumber);
 }
 
 
-
-
-
-// wenn numberToTest durch eine andere (die nicht 1 oder sich selbst ist) teilbar ist
-// dass gibts stress
-function testIfItHasDividableNumbers(numberToTest)
-{
-    for (let i = 2; i <= numberToTest - 1; i++)
-    { // damit grenzen wir ein das for loop ab zwei starten soll und bis einen weniger als testzahl testen soll
+// wenn numberToTest(Zahl) durch eine andere (die nicht 1 oder sich selbst ist) teilbar ist -> strezzZ
+function testDividableNumbers(numberToTest){
+    for (let i = 2; i <= numberToTest - 1; i++) { // damit wird eingegrenzt das for loop ab zwei starten soll und bis einen weniger als testzahl testen soll
         const potentialDivisor = i;
-        // damit nehmen wir die werte oben raus aus dem (2-4 und packen das in var)
+        // damit werden werte oben raus gezogen, über index i (z.B. bei 5: 2-4) und in neuer var gespeichert
         
         const dividable = isDividable(numberToTest, potentialDivisor);
-        // neue variable mit der funktion wo wir unten testen ob modulo rechnung 0 rest (true) hat oder nicht (false)
+        // neue variable mit der funktion von weiter unten, in der getestet wird ob modulo rechnung 0 (true) für den rest ergeben hat oder nicht (false)
         // number to test = quasi zahl vom array
         // potential divisor = zahlen von oben 2-4 
-        if (dividable)
-        {
+        if (dividable){
             console.log(numberToTest, dividable, potentialDivisor, numberToTest / potentialDivisor);
             // string verkettung mit den werten inner html zuordnen
-        }
-            
-        
+        }      
     }
 }
-
-
 
 // returns true wenn teilbar ohne rest
 function isDividable(numberToTest, divisor)
 {
-    if (numberToTest % divisor == 0)
-    {
+    if (numberToTest % divisor == 0){
         return true;
     }
-    else
-    {
+    else{
         return false;
     }
 }

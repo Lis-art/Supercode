@@ -4,7 +4,6 @@ Schreibe eine Funktion, mit der du am Ende in deinem HTML das Wort “Loop” au
 Die Anzahl der Buchstaben “o” variiert durch die Eingabe des Users.
  
 Hinweise:
-
 Du wirst mit einem Array arbeiten müssen.
 Nutze einen Loop und eine Array-Methode, um an einer bestimmten Stelle das neue Element hinzuzufügen.
 Wandle das Array am Ende in einen String um.
