@@ -17,29 +17,27 @@ let changeText = document.querySelector("#demo");
 function changeBackground (color){
     count++;
     bodyHTML.style.backgroundColor = color;
-    
-    changeText.innerHTML = "Wir haben die Farbe " + count + " geändert und hat die Farbe " + color; 
+    changeText.innerHTML = "Wir haben die Farbe " + count + " mal geändert und hat die Farbe " + color; 
 };
-
 
 
 function changeHandle(){
     const rangeBtn = document.querySelectorAll("input");
     let dasGroßeGanze = "#";
-    
     for (let i = 0; i < rangeBtn.length; i++){
         let numRangeBtn = rangeBtn[i].value; 
         let myHex = Number(numRangeBtn).toString(16);
         dasGroßeGanze += myHex;
     }
     console.log(dasGroßeGanze);
-    
     //bodyHTML.style.backgroundColor = dasGroßeGanze;
     //changeText.innerHTML = dasGroßeGanze;
     //count++;
     changeBackground(dasGroßeGanze);
     //das hier ist dasselbe wie die drei zeilen dadrüber
 };
+
+
 
 
 
