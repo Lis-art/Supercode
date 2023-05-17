@@ -24,7 +24,9 @@ let upperDrinks1 = getraenke.map(function(getraenkeGroß) {
     return getraenkeGroß.toUpperCase();
 });
 console.log(upperDrinks1);
+// getraenkeGroß steht jetzt für jedes einzelne Element im Array
+// Elemente werden damit durch geloopt
     
-// als arrow function
+// als arrow function - Kurzschreibweise
 let upperDrinks = getraenke.map(getraenkeGroß => getraenkeGroß.toUpperCase);
 console.log(upperDrinks);

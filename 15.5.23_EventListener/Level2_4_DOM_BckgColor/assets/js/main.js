@@ -14,7 +14,7 @@ document.querySelector("#button").addEventListener("click", (e) => {
     e.preventDefault();
   
     let selection = document.querySelector("#farbeAuswahlen").value;
-    let index = document.querySelector("#farbeAuswahlen").selectedIndex;
+    let index = document.querySelector("#farbeAuswahlen").selectedIndex + 1;
     let selectionOhneLeerzeichen = selection.replace(/\s+/g, '');
     
     document.querySelector("body").style.backgroundColor = selectionOhneLeerzeichen;
