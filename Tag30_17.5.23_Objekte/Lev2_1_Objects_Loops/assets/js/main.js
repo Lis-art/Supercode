@@ -32,66 +32,117 @@ let edelMetallPreise = [
 	{ name: "Osmium", preiseGramEuro: 11.54, veraenderung: "0.00%" },
 ];
 
-//for each fuer d Namen
-const metallNames = [];
-edelMetallPreise.forEach(metallObject => {
-	metallNames.push(metallObject.name);
+
+let arrayNamen = [];
+let arrayPreise = [];
+let arrayAenderung = [];
+edelMetallPreise.forEach(metalle => {
+	arrayNamen.push(metalle.name)
+	arrayPreise.push(metalle.preiseGramEuro)
+	arrayAenderung.push(metalle.veraenderung)
 });
-console.log(metallNames);
+console.log(arrayNamen);
+console.log(arrayPreise);
+console.log(arrayAenderung);
 
-//map fuer d Namen
-const metallNamesMap = edelMetallPreise.map(metallObject => metallObject.name);
-console.log(metallNamesMap);
+console.log("=====================");
 
-//for each fuer d Preise
-const metallPreiseGramm = [];
-edelMetallPreise.forEach(metallObject => {
-	metallPreiseGramm.push(metallObject.preiseGramEuro);
-});
-console.log(metallPreiseGramm);
-
-//map fuer d Preise
-const metallPreiseGrammMap = edelMetallPreise.map(
-	metallObject => metallObject.preiseGramEuro,
-);
-console.log(metallPreiseGrammMap);
-
-//for each fuer d veraenderung
-const metallVeraenderungen = [];
-edelMetallPreise.forEach(metallObject => {
-	metallVeraenderungen.push(metallObject.veraenderung);
-});
-console.log(metallVeraenderungen);
-
-//map fuer d veraenderung
-const metallVeraenderungenMap = edelMetallPreise.map(
-	metallObject => metallObject.veraenderung,
-);
-console.log(metallVeraenderungenMap);
+const mapName = edelMetallPreise.map((metalle) =>  metalle.name);
+const mapPreise = edelMetallPreise.map ((metalle) => metalle.preiseGramEuro);
+const mapAenderung = edelMetallPreise.map((metalle) => metalle.veraenderung);
 
 
 
-// filter()
-const preisUeber50 = edelMetallPreise.filter(
-	metallObject => metallObject.preiseGramEuro > 50,
-);
-console.log(preisUeber50);
+//Verwende filter() und greife auf preiseGramEuro die teurer als 50 Euro zu 
+
+const hohePreise = edelMetallPreise.filter((metalle) => metalle.preiseGramEuro > 50);
+console.log(hohePreise);
+// ! wenn man Value zurück bekommt (filter, map) muss man Wert in Variable speichern!!!
+
+const table = document.createElement("table");
+const tableBody = document.createElement("tbody");
+table.appendChild(tableBody);
+const body = document.querySelector("body");
+body.appendChild(table);
 
 
-
-// Tabelle erstellen
-
-const createTable = () => {
-	const table = document.createElement("table");
-	let tableContent = `<tr><th>Name</th><th>Preis pro Gramm in Euro</th><th>Veraenderung</th></tr>`;
-
-	for (let i = 0; i < edelMetallPreise.length; i++) {
-		tableContent += `<tr><td>${edelMetallPreise[i].name}</td><td>${edelMetallPreise[i].preiseGramEuro}</td><td>${edelMetallPreise[i].veraenderung}</td></tr>`;
+edelMetallPreise.forEach((metalle) => {
+	
+	let tableTr = "";
+	let tableValues = "";
+	for (let key in metalle){
+		tableValues += `<td>${metalle[key]}</td>`;
 	}
+	tableTr = `<tr>${tableValues}</tr>`
+	tableBody.insertAdjacentHTML("beforeend", tableTr)
+})
 
-	table.innerHTML = tableContent;
 
-	document.body.append(table);
-};
+let keys = Object.keys(edelMetallPreise[0]);
+let thHTML = ``;
 
-createTable();
+keys.forEach((key) => {
+	thHTML += `<th>${key}</th>`;
+})
+let tableTrHeadline = `<tr>${thHTML}</tr>`;
+tableBody.insertAdjacentHTML("afterbegin", tableTrHeadline)
+
+/* 
+// Andere Lösung:
+const table = document.createElement("table");
+edelMetallPreise.unshift(["name", "preiseGramEuro", "veraenderung"]);
+edelMetallPreise.forEach((metall, index) => {
+    const tr = document.createElement("tr");
+    for (const key in metall) {
+        const element = metall[key];
+        let zelle;
+        if (index === 0) {
+            zelle = document.createElement("th");
+        } else {
+            zelle = document.createElement("td");
+        }
+        zelle.textContent = element;
+        tr.appendChild(zelle);
+    }
+    table.appendChild(tr);
+});
+
+document.body.appendChild(table);
+ */
+
+
+
+
+/* 
+// Andere Lösung:
+let table = document.createElement("table");
+
+edelMetallPreise.unshift(["Name", "PreiseGramEuro", "Veranderung"]);
+
+for (let i = 0; i < edelMetallPreise.length; i++) {
+  let tableTr = document.createElement("tr");
+  table.appendChild(tableTr);
+
+  if (i === 0) {
+    for (let j = 0; j < edelMetallPreise[i].length; j++) {
+      let tableTh = document.createElement("th");
+      tableTh.innerHTML = edelMetallPreise[i][j];
+      tableTr.appendChild(tableTh);
+    }
+  } else {
+    let nameTd = document.createElement("td");
+    nameTd.innerHTML = edelMetallPreise[i].name;
+    tableTr.appendChild(nameTd);
+
+    let preisGramEuroTd = document.createElement("td");
+    preisGramEuroTd.innerHTML = edelMetallPreise[i].preiseGramEuro;
+    tableTr.appendChild(preisGramEuroTd);
+
+    let veranderungTd = document.createElement("td");
+    veranderungTd.innerHTML = edelMetallPreise[i].veranderung;
+    tableTr.appendChild(veranderungTd);
+  }
+}
+// console.log(table);
+let tableBody = document.querySelector("body");
+tableBody.appendChild(table); */
