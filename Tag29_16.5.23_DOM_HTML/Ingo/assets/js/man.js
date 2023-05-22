@@ -153,3 +153,6 @@ imgSourceArray.forEach(imgSrc => {
 // * closest - geht nach oben (z.B um Container zu ändern!), query nach unten
 // * insertAdjacentHTML
 // * setAttribute
+
+
+

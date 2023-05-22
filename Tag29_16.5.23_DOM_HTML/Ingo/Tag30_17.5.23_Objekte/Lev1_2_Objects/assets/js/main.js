@@ -18,5 +18,3 @@ const person = {
 }
 console.log(person.name, person.age);
 console.log(person.sagNameAlter(person.name, person.age));
-
-
