@@ -20,18 +20,14 @@ let album = [
 let lowerCase = album.map((low) => {
     return low.toLowerCase();
 })
-console.log(lowerCase);
-
 
 const cutted = (a) => {
-
-    if (a.includes(".") == true){
+    if (a.includes(".")){
         return a.slice(0, a.length-4);
     } else  {
         return a = "invalid";
     }
 };
-
 let output = lowerCase.map(cutted);
 console.log(output);
 
@@ -42,22 +38,23 @@ console.log(output);
 Pauls Lösung:
 let albums = albumArray.map((album) =>
     album.lastindexOf(".") === -1 //wenn kein Punkt vorkommt gleich falsch
-        ? (album = "invalied")
+        ? (album = "invalid")
         : album.slice(0, album.lastindexOf(".")).toLowerCase()
 );
 console.log({ albums }); 
+
 */
+
 
 /* 
 Timos Lösung:
 const removeME = (a) => {
     return (a.includes(".") 
     ? a.slice(0,a.length-4) 
-    : "invalid")
-    .toLowerCase();
+    : "invalid").toLowerCase();
  }
  
  let newAlbum = album.map(removeME);
  console.log(newAlbum); 
+ 
  */
-
