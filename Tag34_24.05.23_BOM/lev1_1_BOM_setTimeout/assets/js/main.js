@@ -4,8 +4,8 @@ Nutzen kannst Du:
 setTimeout
  */
 
-
 /* 
+
 console.log("Start warten für drei Sekunden");
 
 const consolenAusgabe = () => {
@@ -13,8 +13,8 @@ const consolenAusgabe = () => {
 };
 setTimeout(consolenAusgabe, 3000);
 
+ 
  */
-
 
 
 

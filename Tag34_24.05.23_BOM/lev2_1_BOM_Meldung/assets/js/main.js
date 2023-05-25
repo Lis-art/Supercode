@@ -31,3 +31,21 @@ function noText() {
     }
 }
 const interval = setInterval(noText, 1000);
+
+
+/* 
+const outputCountDown = document.querySelector("#count");
+const divMessege = document.querySelector(".message");
+let count = 10;
+
+window.addEventListener("load", (e) => {
+	const countDownInterval = setInterval(() => {
+		count--;
+		outputCountDown.innerHTML = count;
+		if (count <= 0) {
+			divMessege.classList.add("remove");
+			clearInterval(countDownInterval);
+		}
+	}, 1000);
+});
+ */

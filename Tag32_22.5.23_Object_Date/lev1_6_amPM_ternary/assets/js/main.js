@@ -21,11 +21,9 @@ function amPM(dateInput) {
 
     if (hours < 11.59){
         return "AM";
-    } else if (hours > 11.59){
-        return "PM";
     } else {
-        return "";
-    }
+        return "PM";
+    } 
 
 }
 console.log(amPM(date1));
@@ -33,3 +31,9 @@ console.log(amPM(date2));
 console.log(amPM(date3));
 console.log(amPM(date4));
 
+
+//Ternary Operator
+/* const amPm = date => {
+    let amPm = date.getHours() < 12 ? "AM" : "PM";
+    return amPm;
+}; */

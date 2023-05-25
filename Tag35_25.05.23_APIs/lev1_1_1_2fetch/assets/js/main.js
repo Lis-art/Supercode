@@ -16,7 +16,7 @@ fetch("https://picsum.photos/v2/list")
   });
 
 
- */
+*/
 
 /* 
 Da du dir die Daten jetzt schon in der Konsole ausgeben lassen kannst, darfst du als Nächstes für jeden Datensatz eine Kombination aus Bild und Autor in ein figure-Element wrappen und in deinem HTML ausgeben lassen. 
@@ -40,20 +40,21 @@ fetch("https://picsum.photos/v2/list")
         const img = author.download_url;
         const id = author.id;
 
-        // DIV erstellen
+        // DIV Element erstellen
         let authorItem = document.createElement("figure");
 
-        // Title
+        // Title Element erstellen
         let nameOfAuthor = document.createElement("figcaption");
         nameOfAuthor.textContent = name;
         authorItem.appendChild(nameOfAuthor);
 
-        // IMG
+        // IMG Element erstellen
         let image = document.createElement("img");
         image.setAttribute("src", img);
         image.setAttribute("alt", name);
         authorItem.appendChild(image);
 
+        // Elemente in die section mit der Class authorITEMS übertragen
         document.querySelector(".authorITEMS").appendChild(authorItem);
     });
 })

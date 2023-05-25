@@ -12,18 +12,14 @@ querySelector
 let zeitCounter = document.querySelector(".zeit");
 const btn = document.querySelector("#btn");
 
-btn.addEventListener("click", () => {
-    //console.log("Hi");
-    zeitCounter.innerHTML = "100%";
+btn.addEventListener("click", () => {   
     let counterRunter = 100; 
-
     const consolenAusgabeZahlen = () => {
-        //console.log(counterRunter, "%");
+        counterRunter--; 
         zeitCounter.innerHTML = counterRunter + "%"; 
         if (counterRunter === 0) {
             clearInterval(interval);
         }
-        counterRunter--; 
     };
-    const interval = setInterval(consolenAusgabeZahlen, 1000); 
+    const interval = setInterval(consolenAusgabeZahlen, 100); 
 });
