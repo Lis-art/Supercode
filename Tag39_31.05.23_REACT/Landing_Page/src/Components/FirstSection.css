@@ -1,0 +1,41 @@
+section{
+    height: 80vh;
+}
+.headerBlock{
+    text-align: center;
+}
+.headerBlock h3{
+    color: green;
+    font-size: 1.3rem;
+    padding: 40px 0 12px 0;
+}
+.headerBlock h2{
+    font-size: 1.8rem;
+    width: 552px;
+    margin: 0 auto 35px auto;
+}
+.infoBlock{
+    margin-bottom: 30px;
+}
+.oben{
+    display: flex;
+}
+.unten{
+    display: flex;
+}
+.infoBlockEl{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 350px;
+    margin: 0 auto 0 auto;
+}
+.imgTitle{
+    display: flex;
+}
+.imgTitle img{
+    width: 25px;
+    height: 25px;
+    margin-left: -28px;
+    margin-right: 8px;
+}
