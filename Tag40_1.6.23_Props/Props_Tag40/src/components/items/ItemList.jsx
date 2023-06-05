@@ -18,7 +18,10 @@ const ItemList = () => {
         <>
         <h1>My ToDos</h1>
         <ul>
-        {itemArray.map((item, index) => <Item artikel={item} key={index} />)}
+        {itemArray.map((item, index) => 
+        <Item 
+        artikel={item} 
+        key={index} />)}
         </ul>
         </>
     )

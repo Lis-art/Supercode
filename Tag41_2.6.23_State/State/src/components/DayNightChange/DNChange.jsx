@@ -11,7 +11,6 @@ const DNChange = () => {
         <div style={{color: textColor, backgroundColor: backgroundColor}}>
         <h1>{night ? "Es ist Tag" : "Es ist Nacht"}</h1>
         <button onClick={() => {setNight(!night)}}>Change Light</button>
-
         </div>
         </>
     )

@@ -1,0 +1,16 @@
+#btns{
+    display: flex;
+    padding: 25px;
+    margin: 16px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    margin: 20px;
+}
+
+#KtoStand{
+    font-size: 2.8rem;
+}
+
