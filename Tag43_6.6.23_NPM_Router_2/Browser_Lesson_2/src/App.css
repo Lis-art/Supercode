@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  
+img{
+    max-width: 100%;
+}
+    
+.navSection{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3rem;
+}
+    
+h1{
+    font-size: 2rem;
+}
+    
+a{
+    color: black;
+    font-weight: 600;
+    margin-right:  2rem;
+}
+    
+    /* HOME */
+header{
+    width: 100vw;
+    height: 40vh;
+    background: url(./assets/imgs/homeHead.jpg) center no-repeat;
+    background-size: cover;
+}
+    
+.homeSection{
+    width: 30rem;
+    margin:  10rem;
+}
+    
+h2{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.btn{
+        cursor: pointer;
+        background-color: white;
+        color: green;
+        border: 2px solid green;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+}
+    

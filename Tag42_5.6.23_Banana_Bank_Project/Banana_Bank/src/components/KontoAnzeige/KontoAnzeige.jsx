@@ -1,4 +1,4 @@
-const Konto = ({ kontostand }) => {
+const Konto = ({kontostand}) => {
   return (
     <div>
       <h2>Kontostand: {kontostand} €</h2>
