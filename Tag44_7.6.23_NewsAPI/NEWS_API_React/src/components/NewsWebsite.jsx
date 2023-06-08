@@ -1,6 +1,6 @@
 
 
-  import React, { useState, useEffect } from 'react';
+  import { useState, useEffect } from 'react';
   import { useParams } from 'react-router-dom';
   
   const NewsWebsite = () => {
@@ -48,8 +48,7 @@
   };
   
 
-  
-  // ArticleCard-Komponente bleibt unverändert
+
   const ArticleCard = ({ article }) => {
     return (
       <div>
