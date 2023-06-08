@@ -2,7 +2,8 @@ import Products from "./Products"
 
 const ProductList = () => {
 
-    
+    // Map Methode wird auf den Array verwendet um jedes Listenelement zu verarbeiten
+    // Für jedes Produkt wird die Komponente 'Products'  gerendert und mit dem Props 'artikel' (das aktuelle Produktobjekt) und 'key' (der Index des Elementes in der Liste) versehen
     return(
         <>
         <h2>Items</h2>

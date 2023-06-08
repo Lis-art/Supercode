@@ -24,3 +24,10 @@ const Counter = () => {
 
 }
 export default Counter
+// useState enthält den aktuellen Wert von Count und die Aktualisierungsfunktion
+// setCount um den Wert anzupassen/zu überschreiben
+//useState enthält hier als 0 den Ausgangswert von count
+// drei Funktionen werden definiert und mit setCount(count +/-/reset) 
+// wirde der neue Wert von Count erfasst und aktualisiert
+
+// im Return werden dann netsprechend der Buttons die jeweiligen Funktionen per Click ausgeführt
