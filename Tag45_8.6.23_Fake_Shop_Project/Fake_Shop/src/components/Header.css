@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(242, 233, 228);
+}
+
+.headline{
+   font-size: 2.8rem;
+}
+.nav-links{
+    margin-bottom: 50px;
+    
+}
+.link{
+   margin:50px;
+   border: 1px solid rgb(154, 140, 152);
+   background-color: rgb(154, 140, 152);
+   color: 74, 78, 105;
+   padding: 15px;
+   border-radius: 10px;
+   text-decoration: none;
+}
+.link:hover{
+    background-color: rgb(34, 34, 59);
+    color: rgb(201, 173, 167);
+}

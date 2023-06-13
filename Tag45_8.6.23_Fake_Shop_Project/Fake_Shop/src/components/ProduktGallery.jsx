@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-
+import './ProduktGallery.css'
 
 const ProduktGallery = () => {
 
@@ -23,10 +23,10 @@ const ProduktGallery = () => {
         <section>
           {product.map((item, index) => (
             <div className="shop-item" key={index}>
-              <img src={item.image} alt="" />
-              <p>{item.title}</p>
-              <p>{item.price} Euro</p>
-              <Link to={`/produktdetails/${item.id}`}>Read more</Link>
+              <img className="item-img"  src={item.image} alt="" />
+              <p className="item">{item.title}</p>
+              <p className="item">{item.price} Euro</p>
+              <Link to={`/produktdetails/${item.id}`} className="link-read-more">Read more</Link>
             </div>
           ))}
         </section>

@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import Header from "../components/Header";
-
+import './Produktdetails.css'
 const Produktdetails = () => {
     const [getDetail, setGetDetail] = useState([]);
     const params = useParams();
@@ -21,10 +21,10 @@ const Produktdetails = () => {
           <Header />
           <section>
               <div className="shop-item" >
-                <img src={getDetail.image} alt="" />
-                <p>{getDetail.title}</p>
-                <p>{getDetail.price} Euro</p>
-                <p>{getDetail.description}</p>
+                <img className="item-img"src={getDetail.image} alt="" />
+                <p className='item'>{getDetail.title}</p>
+                <p className='item'>{getDetail.price} Euro</p>
+                <p className='item'>{getDetail.description}</p>
               </div>
           </section>
       </section>
