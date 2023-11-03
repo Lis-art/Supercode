@@ -189,7 +189,7 @@ let number4 = number3.map((Pfannkuchen) => {
 console.log(number4);
 
 // # ===== forEach() vs. map() =====
-// - forEach() -> Gibt und KEIN(!!!) neues Array zurück
+// - forEach() -> Gibt uns KEIN(!!!) neues Array zurück
 // - map() -> Gibt uns ein neues Array zurück -> Wenn ich mit dem Werten später weiterarbeiten muss ist map() the way to go.
 
 const studentNames = ["Nina", "Tom", "Simon"];

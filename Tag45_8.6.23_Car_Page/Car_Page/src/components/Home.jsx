@@ -1,10 +1,11 @@
 import Header from "../assets/Header"
 import Carlist from "./Carlist"
 
+
 const Home = () => {
 
     return(
-        <section>
+        <section className="App">
             <Header/>
             <Carlist/>
         </section>

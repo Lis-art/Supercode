@@ -1,0 +1,64 @@
+.beerDetailPage{
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    padding: 30px 0;
+}
+
+.detailImgContainer{
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.beerDetailImg{
+    height: 250px;
+    align-items: center;
+}
+
+.beerDetailName{
+    color: black;
+    font-size: 2.2rem;
+    padding: 7px;  
+    font-family: 'Roboto';
+}
+
+.beerDetailTagline{
+    color: #FFCA41;
+    font-size: 1.5rem;
+    padding: 7px;  
+    margin-bottom: 7px;
+    font-family: 'Roboto';
+}
+
+.gray1{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(51, 51, 51, 0.5);
+    padding: 7px;
+    font-size: 1.3rem;
+
+}
+
+.gray2{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(51, 51, 51, 0.5);
+    padding: 7px;
+    font-size: 1.3rem;
+}
+
+.beerDescription{
+    color: black;
+    font-size: 1rem;
+    padding: 7px;  
+    font-family: 'Roboto';
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+}
+
+.backIcon{
+    width: 35px;
+}
